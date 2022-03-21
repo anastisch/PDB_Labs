@@ -29,7 +29,7 @@ namespace Lab2_Observable
             chat.PublishMessage(message);
         }
 
-        public void ReceiveMessage(ChatMessage message)
+        public virtual void ReceiveMessage(ChatMessage message)
         {
             string dateTimeString = DateTime.Now.ToString();
             Console.WriteLine(dateTimeString + " User " + Name +
